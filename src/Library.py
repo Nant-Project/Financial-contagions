@@ -18,8 +18,9 @@ def load_indexes(pathdir):
     return dfDictist,indexes_names
 
 betaFunction=lambda i_index,j_index,Z,tho:np.exp(-abs(Z[i_index]-Z[j_index])/tho)
+alphaFunction=lambda i_index,j_index,K,gamma:1-np.exp(-K[j_index]/(K[i_index]*gamma))
 
-def compute_beta(timezonePath,indexes_names,tho=3):
+def compute_beta_matrix(timezonePath,indexes_names,tho=3):
     n=len(indexes_names)
     beta=np.zeros((n,n))
     with open(timezonePath) as file:
@@ -28,3 +29,13 @@ def compute_beta(timezonePath,indexes_names,tho=3):
         for j,j_index in enumerate(indexes_names):
             beta[i,j]=betaFunction(i_index,j_index,Z,tho)
     return beta
+
+def compute_alpha_matrix(CapitalisationPath,indexes_names,gamma,filed="UniformCapitalisation"):
+    n=len(indexes_names)
+    alpha=np.zeros((n,n))
+    with open(CapitalisationPath) as file:
+        K=json.load(file)[filed]
+    for i,i_index in enumerate(indexes_names):
+        for j,j_index in enumerate(indexes_names):
+            alpha[i,j]=alphaFunction(i_index,j_index,K,gamma)
+    return alpha
