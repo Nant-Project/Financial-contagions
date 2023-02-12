@@ -14,10 +14,12 @@
     "HSI":13,
     "N225":14,
     "TWII":15,
-    "JKSE":16
+    "JKSE":16,
+    "spx_d":12
     },
 "sametimezone":
     {"AEX":0,
+    "spx_d":12,
     "FCHI":0,
     "JKS":0,
     "SSEC":0 ,
@@ -36,6 +38,7 @@
     },
  "UniformCapitalisation":
     {"AEX":1,
+    "spx_d":3,
     "FCHI":1,
     "JKS":1,
     "SSEC":1,
@@ -54,6 +57,7 @@
     },
 "RandomCapitalisation":
     {"AEX":10,
+    "spx_d":30,
     "FCHI":1,
     "JKS":12,
     "SSEC":6,
