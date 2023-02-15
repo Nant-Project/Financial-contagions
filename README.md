@@ -1,6 +1,14 @@
 # Financial contagions
-###  Giulia Rotundo
-### Sapienza University of Rome, Italy giulia.rotundo@uniroma1.it
+###  Giulia Rotundo : Sapienza University of Rome, Italy giulia.rotundo@uniroma1.it
+
+
+## Participants:
+### 	Malvina Bozhidarova: Malvina.Bozhidarova@nottingham.ac.uk
+###   Aleksandra Grzelik: aleksandra.grzelik@edu.uni.lodz.pl
+###   Zouhar El Hadiq : zouhair_elhadiq@um5.ac.ma
+
+
+## Introduction
 
 Behavioural sciences explore the role of behaviour - human emotion and natural response - to what is happening in the market. It overcomes the paradigm of "rational investor", since both the perception of risk and the reaction are not any more necessarily driven by rational calculus, but to the intrinsic nature of human response. Another element of behavioural Sciences is "blindness to small changes" - the common behaviour to not react to small changes, but to overreact (and eventually panic) to large changes. The embedding of behavioural traits in panel data analysis allows to depict a frame which is more accurate than just regression analysis. Nonlinearity enters the model due to a behavioural attribute of humans reacting disproportionately to big changes. Actually, each market is considered as a unit providing non linear response, quite similar to a single artificial neuron cell, and all the markets act together as a system, which can be described as a set of coupled oscillators.
 
